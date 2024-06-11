@@ -6,5 +6,5 @@ echo \$3: $3
 echo \$\{3-\$1\}: ${3-$1}
 echo
 echo exit if less than 2 arguments:
-printf "true ${2?} || exit"
+echo "true \${2?} || exit"
 true ${2?} || exit
